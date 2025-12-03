@@ -1,0 +1,12 @@
+{
+  "name": "@yungezeit/oxc-config",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal OXC configurations",
+  "author": "Charles Gruenais",
+  "license": "MIT",
+  "devDependencies": {
+    "oxfmt": "^0.16.0"
+  }
+}
