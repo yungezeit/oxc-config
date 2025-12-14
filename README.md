@@ -16,7 +16,7 @@ pnpm i -D oxlint oxlint-tsgolint
 
 You might want to set the following within your `.vscode/settings.json` file:
 
-```json
+```jsonc
 {
   "oxc.typeAware": true,
   "editor.codeActionsOnSave": {
@@ -25,8 +25,21 @@ You might want to set the following within your `.vscode/settings.json` file:
 }
 ```
 
+You might also want to add the following script withing your `package.json`:
+
+```jsonc
+{
+  // …
+  "scripts": {
+    // …
+    "lint": "oxlint --type-aware"
+  }
+}
+```
 
 ## Formatter
+
+Install
 
 ```bash
 pnpm i -D oxfmt
@@ -34,9 +47,21 @@ pnpm i -D oxfmt
 
 You might want to set the following within your `.vscode/settings.json` file:
 
-```json
+```jsonc
 {
   "editor.defaultFormatter": "oxc.oxc-vscode",
   "oxc.fmt.experimental": true,
+}
+```
+
+You might also want to add the following script withing your `package.json`:
+
+```jsonc
+{
+  // …
+  "scripts": {
+    // …
+    "format": "oxfmt"
+  }
 }
 ```
