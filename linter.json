@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "typescript/no-floating-promises": "off",
+    "typescript/no-redundant-type-constituents": "off"
+  }
+}
